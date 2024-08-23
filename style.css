@@ -158,7 +158,11 @@ section .title p{
 /*float 속성 해제 */ 
 section .about-self:after{
     content: "";
+<<<<<<< HEAD
     clear:both; /*float 이 다 적용되었으면 해제 시킨다*/
+=======
+    clear:both;
+>>>>>>> e9d92e4d2d4874ce9801602cb7e198eee451f2fc
     display: block;
 }
 /*본문 너비 절반 지정 & 왼쪽 배치*/
@@ -193,6 +197,7 @@ section .about-self .right .social a{
     font-size:2.5rem;
     margin-right:0.2rem;
   }
+<<<<<<< HEAD
 /* End about_me.css */
 /* what_i_do.css */
 /* float 속성 해제*/
@@ -502,3 +507,6 @@ header.active{
     opacity:1;
   }
 }
+=======
+/* footer */
+>>>>>>> e9d92e4d2d4874ce9801602cb7e198eee451f2fc
