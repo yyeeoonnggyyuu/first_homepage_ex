@@ -195,4 +195,54 @@ header nav ul{
       font-size:2.5rem;
       margin-right:0.2rem;
     }
-  /* footer */
+
+
+
+
+
+
+
+
+
+  
+비고
+첫번째 
+이런식으로 다 적어주고 시작해야함
+rem이 px보다 반응형커리할때 좋다
+처음 잡아줘야하는건 
+html{
+font-size : ;
+
+각각의 픽셀마다 폰트사이즈를 다시 잡아줘야한다 
+
+그다음 메인이나 셋션컨테이너를 바꿔줘야함
+@media screen and (max-width: 1140px){
+
+ main .container{
+  width: 992px;
+}
+section .container{
+  width:600px;
+}
+}
+위의 두개
+
+
+
+@media screen and (max-width: 1140px){}
+@media (max-width: 992px){
+  html{
+    font-size : 14px;
+}
+@media (max-width: 768px){
+  html{
+    font-size : 13px;
+}
+@media (max-width: 576px){
+  html{
+    font-size : 12px;
+}
+@media (max-width: 400px){
+  html{
+    font-size : 11px;
+}
