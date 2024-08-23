@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pb-footer {
+    position: relative;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-top: 1px solid var(--color-gray-300)
+}
+
+
+.pb-footer-inner {
+    margin: 0 auto;
+    width: 1080px;
+    padding-bottom: var(--spacing-small);
+    font: var(--body-4-regular)
+}
+
+
+
+.pb-footer-logo_img {
+    width: 128px
+}
+
+
+.pb-footer-top {
+    position: relative;
+    display: -webkit-box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-xsmall)
+}
+
+
+
+.pb-footer-bottom {
+    display: -webkit-box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: var(--spacing-3xsmall) var(--spacing-2xsmall);
+    border-radius: var(--radius-medium);
+    background-color: var(--color-gray-50)
+}
+
+.pb-footer-bottom_area {
+    display: -webkit-box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 0;
+    width: 100%
+}
+
+.pb-footer-link {
+    display: -webkit-box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    margin-bottom: var(--spacing-xsmall);
+    white-space: nowrap
+}
+
+
+.pb-footer-address {
+    color: var(--color-gray-700)
+}
+
+.pb-footer-address_gap {
+    display: -webkit-box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    gap: var(--spacing-small);
+    margin-top: var(--spacing-6xsmall)
+}
+
+
+
+.pb-footer-address_line {
+    position: relative
+}
+
+.pb-footer-address_line:first-of-type {
+    margin-right: var(--spacing-small)
+}
+
+.pb-footer-address_line:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -22px;
+    width: 1px;
+    height: 15px;
+    background-color: var(--color-gray-300)
+}
+
+
+
+.pb-footer-copyright {
+    margin-top: var(--spacing-3xsmall);
+    color: var(--color-gray-700)
+}
+
+.pb-footer-copyright.pb-is-mo {
+    display: none
+}
+
+
+.pb-footer-help_title {
+    letter-spacing: -.8px;
+    font-size: 18px;
+    font-family: notoSans,sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: var(--spacing-5xsmall)
+}
+
+.pb-footer-help_number {
+    color: var(--color-blue-500);
+    font: var(--body-1-bold)
+}
+
+
+.pb-footer-help_info:after {
+    display: none
+}
+
+
+.pb-footer-with {
+    padding: 0 20px;
+    height: 42px;
+    border-radius: 999px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font: var(--body-3-regular);
+    line-height: 42px
+}
+
+    </style>
+</head>
+<body>
+    <footer class="pb-footer">
+        <div class="pb-footer-inner">
+            <div class="pb-footer-top">
+                <div class="pb-footer-info">
+                    <ul class="pb-footer-link">
+                        <li class="pb-footer-link_item"><button type="button" onclick="fnMovePage('/view/terms/service_terms.aspx')">이용약관</button></li>
+                        <li class="pb-footer-link_item pb-is-bold"><button type="button" onclick="fnMovePage('/view/terms/privacy.aspx')">개인정보 처리방침</button></li>
+                        <li class="pb-footer-link_item"><button type="button" onclick="fnMovePage('https://www.msafer.or.kr/index.do')">명의도용방지서비스</button></li>
+                        <li class="pb-footer-link_item"><button type="button" onclick="fnMovePage('https://spam.kisa.or.kr/spam/main.do')">불법스팸대응센터</button></li>
+                        <li><button type="button" class="devToggleBtn" onclick="fnToggleDevBtn(this)" style="display: none;">서비스 이용약관</button></li>
+                    </ul>
+                    <div id="master_footer">
+                        <address class="pb-footer-address">
+                            <p>(07237) 서울 영등포구 여의도동 은행로 3 익스콘벤처타워8층</p>
+                            <div class="pb-footer-address_gap">
+                                <div class="pb-footer-address_text">
+                                    <span class="pb-footer-address_line">대표이사 : 조정일</span>
+                                    <span class="pb-footer-address_line">사업자등록번호 : <a class="pb-no-tel">109-81-53365</a></span>
+                                </div>
+                                <p class="pb-footer-address_text">통신판매신고번호 : 제 1호-01-20-0035호</p>
+                            </div>
+                        </address>
+                        <div class="pb-footer-copyright pb-is-pc">Copyright © KONA I All Rights Reserved</div>
+                    </div>
+                </div>
+                <div class="pb-footer-help">
+                    <p class="pb-footer-help_title">고객센터</p>
+                    <a class="pb-footer-help_number pb-no-tel" href="tel:1811-6825">1811-6825</a>
+                    <ul class="pb-footer-help_info">
+                        <li>· 평일 : 09:00 ~ 18:00 (점심시간 : 12:00 ~ 13:00)</li>
+                        <li>· 주말/공휴일 휴무</li>
+                    </ul>
+                </div>
+                <div class="pb-footer-copyright pb-is-mo">Copyright © KONA I All Rights Reserved</div>
+            </div>
+            <div id="footerBottom" class="pb-footer-bottom">
+                <div class="pb-footer-bottom_area">
+                    <div class="pb-footer-logo">
+                        <img class="pb-footer-logo_img" src="/common/images/img-logo.svg" aria-hidden="true">
+                    </div>
+                    <a class="pb-footer-with" href="/view/cooperation/cpWrite.aspx">제휴 문의</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
