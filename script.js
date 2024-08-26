@@ -37,7 +37,7 @@
 
 const headerEl = document.querySelector("header");
 window.addEventListener('scroll', function(){
-    const browerScrolly = this.window.scrollY;
+    const browerScrolly = window.scrollY;
     if(browerScrolly > 0){
         headerEl.classList.add("active");
     } else{
@@ -64,9 +64,6 @@ window.addEventListener('scroll', function(){
 //       headerEl.classList.remove("active");
 //     }
 //   }
-
-// 질문 1. fadeIN으로해야 표시가됨
-// 2.사라지지않음
 
 
 
