@@ -476,7 +476,7 @@ section.contact .contact-me .right .form-group textarea:focus{
   }
   /* End media.css */
   header.active{
-    background-color:rgba(0,0,0);
+    background-color:blue;
     animation:fadeIn 0.5s ease-in-out;
   }
   @keyframes fadeIn{

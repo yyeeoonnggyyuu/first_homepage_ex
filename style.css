@@ -52,6 +52,24 @@ header h1 button{
 header nav ul li button{
   font-size: 1.2rem;
 }
+
+
+/* End media.css */
+header.active{
+  background-color: rgba(0,0,0);
+  animation:fadeIn 0.5s ease-in-out;
+   /*내리면 검은색으로 한번에 변하는게 아닌 0.5초에 걸쳐서 변하는 효과를 줄 수 있음*/
+}
+@keyframes fadeIN{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
 /*main */
 main {
     width: 100%; /* 부모가 가지고 있는 width 여기선.container의 width 값*/
@@ -130,6 +148,8 @@ main button.mouse{
       opacity: 0;
     }
   }
+
+ 
   
 /* section */
 section{
@@ -158,11 +178,7 @@ section .title p{
 /*float 속성 해제 */ 
 section .about-self:after{
     content: "";
-<<<<<<< HEAD
     clear:both; /*float 이 다 적용되었으면 해제 시킨다*/
-=======
-    clear:both;
->>>>>>> e9d92e4d2d4874ce9801602cb7e198eee451f2fc
     display: block;
 }
 /*본문 너비 절반 지정 & 왼쪽 배치*/
@@ -197,7 +213,6 @@ section .about-self .right .social a{
     font-size:2.5rem;
     margin-right:0.2rem;
   }
-<<<<<<< HEAD
 /* End about_me.css */
 /* what_i_do.css */
 /* float 속성 해제*/
@@ -493,20 +508,3 @@ section.contact .contact-me .right button{
     font-size: 3rem; /* 3.5rem -> 3rem */
   }
 }
-
-/* End media.css */
-header.active{
-  background-color:rgba(0,0,0);
-  animation:fadeIn 0.5s ease-in-out;
-}
-@keyframes fadeIn{
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
-}
-=======
-/* footer */
->>>>>>> e9d92e4d2d4874ce9801602cb7e198eee451f2fc
